@@ -1,0 +1,102 @@
+body {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+header {
+    display: flex;
+    background-color: #BFF5FD;
+    width: 100%;
+    height: 100px;
+    text-align: center;
+    justify-content: center;
+}
+
+h1 {
+    align-self: center;
+}
+
+h2 {
+    text-align: center;
+    background-color: #113CCF;
+    color: white;
+}
+
+p {
+    font-size: 20px;
+}
+
+#car {
+    float: left;
+    position: relative;
+    animation-name: move-car;
+    animation-duration: 8s;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes  move-car{
+    0% {margin-left: 0%;}
+    100% {margin-left: 90%;}
+}
+
+#road-trip {
+    display: flex;
+    justify-content: space-between;
+}
+
+#road-trip p {
+    width: 40%;
+}
+
+#car-animation {
+    height: 80px;
+}
+
+#ride-side1 {
+    width: 50%;
+    display: flex;
+    float: left;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 30px;
+    position: relative;
+    animation-name: slide1;
+    animation-duration: 8s;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+}
+
+#ride-side1 p {
+    margin-top: 50px;
+    width: 90%;
+}
+
+#ride-side2 {
+    width: 50%;
+    display: flex;
+    float: left;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    animation-name: slide2;
+    animation-duration: 8s;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+}
+
+@keyframes  slide1{
+    0% {margin-left: -100%;}
+    100% {margin-left: 0%;}
+}
+
+@keyframes  slide2{
+    0% {margin-left: 100%;}
+    100% {margin-left: 0%;}
+}
+
+#ride-side2 p {
+    margin-top: 60px;
+    margin-bottom: 50px;
+    width: 90%;
+}
